@@ -1,82 +1,129 @@
-from pathlib import Path
+# 🌱 Green-Ranger
 
-readme = r'''# Green Ranger
+### Digital Solution for a Greener Future
 
-### Digital Waste Management & Recycling Platform
+Green-Ranger adalah aplikasi web berbasis **Laravel** yang dirancang untuk mendukung pengelolaan dan partisipasi dalam kegiatan lingkungan melalui platform digital yang modern, terstruktur, dan mudah digunakan.
 
-Green Ranger is a web-based application designed to encourage sustainable waste management by connecting waste collection activities with a **reward-based system**.
-
-The platform helps users manage recyclable waste, request waste pickup, earn points from collected materials, and redeem those points for useful rewards. Green Ranger aims to make recycling more accessible, structured, and rewarding for the community.
-
----
-
-## Features
-
-### User Management
-- User registration and authentication
-- User profile management
-- Secure login and logout
-- Personal activity tracking
-
-### Waste Collection
-- Submit recyclable waste collection requests
-- Schedule waste pickup
-- Monitor collection status
-- Record collected waste
-
-### Reward Points
-- Earn points from recyclable waste
-- View accumulated points
-- Track point transaction history
-- Redeem points for available rewards
-
-### Waste Information
-- Information about recyclable waste
-- Waste categories and types
-- Recycling guidance
-- Educational content related to environmental sustainability
-
-### Location & Pickup
-- Pickup location management
-- Location information for waste collection
-- Support for waste collection activities based on user location
-
-### Reward Redemption
-Users can exchange accumulated points for available rewards, such as essential goods and other useful items.
+<p align="center">
+  <b>🌱 Manage • Engage • Contribute • Go Green</b>
+</p>
 
 ---
 
-## System Workflow
+## ✨ Features
+
+- 🌿 **Environmental Activities**
+- 👥 **User Management**
+- 💰 **Donation System**
+- 💳 **Payment Integration**
+- 📊 **Dashboard**
+- 🔐 **Authentication & Authorization**
+- 📱 **Responsive Interface**
+
+---
+
+## 🛠️ Tech Stack
+
+**Laravel · PHP · MySQL · Blade · JavaScript · CSS**
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone Repository
+
+```bash
+git clone <repository-url>
+cd green-ranger
+```
+
+### 2. Install Dependencies
+
+```bash
+composer install
+```
+
+### 3. Configure Environment
+
+```bash
+cp .env.example .env
+```
+
+Sesuaikan konfigurasi database pada file `.env`.
+
+### 4. Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+### 5. Run Migration
+
+```bash
+php artisan migrate
+```
+
+Jika project menggunakan seeder:
+
+```bash
+php artisan db:seed
+```
+
+### 6. Create Storage Link
+
+```bash
+php artisan storage:link
+```
+
+### 7. Run Application
+
+```bash
+php artisan serve
+```
+
+Akses aplikasi melalui:
 
 ```text
-            ┌─────────────────┐
-            │      User       │
-            └────────┬────────┘
-                     │
-                     ▼
-            ┌─────────────────┐
-            │ Register / Login│
-            └────────┬────────┘
-                     │
-                     ▼
-            ┌─────────────────┐
-            │ Submit Waste    │
-            │ Collection      │
-            └────────┬────────┘
-                     │
-                     ▼
-            ┌─────────────────┐
-            │ Waste Pickup /  │
-            │ Collection      │
-            └────────┬────────┘
-                     │
-                     ▼
-            ┌─────────────────┐
-            │ Points Earned   │
-            └────────┬────────┘
-                     │
-                     ▼
-            ┌─────────────────┐
-            │ Reward          │
-            │ Redemption      │
-            └─────────────────┘
+http://127.0.0.1:8000
+```
+
+---
+
+## 📸 Preview
+
+Tambahkan screenshot aplikasi pada folder:
+
+```text
+docs/images/
+```
+
+Contoh:
+
+```text
+docs/images/home.png
+docs/images/dashboard.png
+docs/images/donation.png
+```
+
+Kemudian tampilkan di README:
+
+```html
+<p align="center">
+  <img src="docs/images/home.png" width="850">
+</p>
+```
+
+---
+
+## 🎯 Goal
+
+> **Turning environmental action into a digital experience.**
+
+Green-Ranger memanfaatkan teknologi untuk membantu pengelolaan kegiatan lingkungan secara lebih **efisien, interaktif, dan terintegrasi**.
+
+---
+
+<p align="center">
+  🌱 <b>Green-Ranger</b><br>
+  <i>Technology for a Greener Future</i>
+</p>
